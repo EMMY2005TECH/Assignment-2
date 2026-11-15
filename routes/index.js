@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-/*Get home page /home */
+/* Get home page (/home) */
 
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
@@ -23,9 +23,8 @@ router.get('/projects', function(req, res, next) {
 });
 
 /* obtain contact me page, run contact.ejs and pass on the page title */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Contact Me' });
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact Me' }); 
 });
-
 
 module.exports = router;
