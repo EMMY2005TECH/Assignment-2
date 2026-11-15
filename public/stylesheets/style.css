@@ -1,8 +1,21 @@
+/* Custom CSS overrides for Bootstrap portfolio */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ECF0F1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2C3E50;
 }
 
-a {
-  color: #00B7FF;
+/* Linear Gradient Header */
+.custom-header {
+  background: linear-gradient(to right, #2C3E50, #34495E);
+}
+
+/* Angle Linear Gradient Footer */
+.custom-footer {
+  background: linear-gradient(45deg, #2C3E50, #E74C3C);
+}
+
+/* Project Card Left Accent Border */
+.project-card {
+  border-left: 5px solid #E74C3C;
 }

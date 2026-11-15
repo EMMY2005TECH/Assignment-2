@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<div class="bg-white p-4 rounded-3 shadow-sm mx-auto" style="max-width: 700px;">
+  <h1 class="mb-3"><i class="fa-solid fa-paper-plane text-danger me-2"></i>Get in Touch</h1>
+  <p class="text-muted mb-4">Fill out the form below to send me an email directly.</p>
+
+  <!-- Contact Form with HTML5 Validation and Bootstrap Form Classes -->
+  <form action="mailto:emmanuel.okpara@ontariotechu.net" method="post" enctype="text/plain" name="contactform">
+    <div class="mb-3">
+      <label for="name" class="form-label fw-bold"><i class="fa-solid fa-user me-1"></i> Name:</label>
+      <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label fw-bold"><i class="fa-solid fa-at me-1"></i> Email:</label>
+      <input type="email" class="form-control" id="email" name="Email" placeholder="username@domain.com" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label fw-bold"><i class="fa-solid fa-phone me-1"></i> Cell Number:</label>
+      <input type="tel" class="form-control" id="phone" name="Phone" placeholder="123-456-7890" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="comments" class="form-label fw-bold"><i class="fa-solid fa-comment-dots me-1"></i> Comments:</label>
+      <textarea class="form-control" id="comments" name="Comments" rows="4" placeholder="Type your message here..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">
+      <i class="fa-solid fa-check me-1"></i> Submit Message
+    </button>
+    <button type="reset" class="btn btn-secondary">
+      <i class="fa-solid fa-rotate-left me-1"></i> Clear Form
+    </button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
